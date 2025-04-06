@@ -37,9 +37,41 @@ public class UserService {
 
 	}
 	
-	public void addNewUser(UserDetails details) {
+	public UserDetails addNewUser(UserDetails details) {
 		
 		list.add(details);
+		return details;
+	}
+	
+	
+	public void updateUserDetailsById(int id,String name) {
+		for(UserDetails d:list) {
+			if(id == d.getId()) {
+				d.setName(name);
+			}
+		}
+	}
+	
+	
+	
+	public UserDetails updateDetailsById(int id,UserDetails details) {
+		for(UserDetails d:list) {
+			if(id==d.getId()) {
+				d.setName(details.getName());
+				d.setStatus(details.getStatus());
+			}
+		}
+		return details;
+	}
+	
+	
+	public void deleteUser() {
+			list.clear();
+	}
+	
+	
+	public void getUserDeleteById(int id) {
+		list.removeIf(user -> user.getId() == id);
 	}
 
 }
