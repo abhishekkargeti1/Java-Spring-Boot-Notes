@@ -8721,3 +8721,123 @@ org.eclipse.core.runtime.CoreException: Launch configuration CurdOperationApplic
 2025-05-24 23:17:21,187 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-05-24 23:17:21,194 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-05-24 23:17:21,196 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\PractiseProject\src\test\resources
+2025-05-25 11:22:12,974 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-05-25 18:43:08,050 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-05-25 19:01:31,232 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-05-25 19:24:14,008 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-05-26 09:38:17,659 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-05-26 09:38:35,039 [Worker-1: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.springBoot:ServerSideValidation:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\ServerSideValidation\pom.xml.
+2025-05-26 09:38:39,416 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 09:38:39,428 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 09:38:39,432 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\ServerSideValidation\src\test\resources
+2025-05-26 09:38:46,251 [Worker-3: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.springBoot:PractiseProject:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PractiseProject\pom.xml.
+2025-05-26 09:38:47,483 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 09:38:47,497 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 09:38:47,502 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\PractiseProject\src\test\resources
+2025-05-26 09:38:48,005 [Worker-4: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.springBoot:PractiseProject:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PractiseProject\pom.xml.
+2025-05-26 09:40:06,259 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 09:40:06,269 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 09:40:06,272 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\PractiseProject\src\test\resources
+2025-05-26 09:42:09,433 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 09:42:09,440 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 09:42:09,443 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\PractiseProject\src\test\resources
+2025-05-26 09:47:41,976 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-05-26 12:00:08,790 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-05-26 12:00:18,838 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 12:00:18,851 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 12:00:18,855 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\PractiseProject\src\test\resources
+2025-05-26 12:00:46,945 [Worker-8: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:RESTAPIPractice:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\RESTAPIPractice\pom.xml.
+2025-05-26 12:00:48,291 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 12:00:48,308 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 12:00:48,312 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\RESTAPIPractice\src\test\resources
+2025-05-26 12:00:48,367 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:00:48,739 [Worker-4: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:RESTAPIPractice:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\RESTAPIPractice\pom.xml.
+2025-05-26 12:00:49,624 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/main/java
+2025-05-26 12:00:49,626 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:49,626 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:49,627 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/test/java
+2025-05-26 12:00:49,627 [Worker-4: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/test/resources
+2025-05-26 12:00:50,105 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 12:00:50,113 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 12:00:50,117 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\RESTAPIPractice\src\test\resources
+2025-05-26 12:00:50,807 [Worker-1: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:RESTAPIPractice:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\RESTAPIPractice\pom.xml.
+2025-05-26 12:00:51,109 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:00:51,430 [Worker-10: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:RESTAPIPractice:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\RESTAPIPractice\pom.xml.
+2025-05-26 12:00:51,757 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/main/java
+2025-05-26 12:00:51,758 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:51,758 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:51,758 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/test/java
+2025-05-26 12:00:51,758 [Worker-10: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/test/resources
+2025-05-26 12:00:51,771 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:00:52,082 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:RESTAPIPractice:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\RESTAPIPractice\pom.xml.
+2025-05-26 12:00:52,351 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/main/java
+2025-05-26 12:00:52,351 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:52,352 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:52,352 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/test/java
+2025-05-26 12:00:52,352 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/test/resources
+2025-05-26 12:00:52,363 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:00:52,666 [Worker-1: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:RESTAPIPractice:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\RESTAPIPractice\pom.xml.
+2025-05-26 12:00:52,948 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/main/java
+2025-05-26 12:00:52,948 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:52,948 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:52,949 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/test/java
+2025-05-26 12:00:52,949 [Worker-1: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/test/resources
+2025-05-26 12:00:52,958 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:00:53,229 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:RESTAPIPractice:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\RESTAPIPractice\pom.xml.
+2025-05-26 12:00:53,476 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/main/java
+2025-05-26 12:00:53,477 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:53,477 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/main/resources
+2025-05-26 12:00:53,477 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RESTAPIPractice/src/test/java
+2025-05-26 12:00:53,477 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /RESTAPIPractice/src/test/resources
+2025-05-26 12:01:27,055 [Worker-10: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:PracticeApi:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PracticeApi\pom.xml.
+2025-05-26 12:01:27,965 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:01:28,278 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:PracticeApi:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PracticeApi\pom.xml.
+2025-05-26 12:01:28,741 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PracticeApi/src/main/java
+2025-05-26 12:01:28,741 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/main/resources
+2025-05-26 12:01:28,741 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/main/resources
+2025-05-26 12:01:28,742 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PracticeApi/src/test/java
+2025-05-26 12:01:28,742 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/test/resources
+2025-05-26 12:01:28,789 [Worker-6: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:01:29,201 [Worker-6: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:PracticeApi:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PracticeApi\pom.xml.
+2025-05-26 12:01:29,652 [Worker-6: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PracticeApi/src/main/java
+2025-05-26 12:01:29,653 [Worker-6: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/main/resources
+2025-05-26 12:01:29,653 [Worker-6: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/main/resources
+2025-05-26 12:01:29,654 [Worker-6: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PracticeApi/src/test/java
+2025-05-26 12:01:29,654 [Worker-6: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/test/resources
+2025-05-26 12:01:29,667 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:01:29,942 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:PracticeApi:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PracticeApi\pom.xml.
+2025-05-26 12:01:30,296 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PracticeApi/src/main/java
+2025-05-26 12:01:30,296 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/main/resources
+2025-05-26 12:01:30,297 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/main/resources
+2025-05-26 12:01:30,297 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PracticeApi/src/test/java
+2025-05-26 12:01:30,297 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/test/resources
+2025-05-26 12:01:30,309 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-05-26 12:01:30,587 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.API.Book:PracticeApi:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PracticeApi\pom.xml.
+2025-05-26 12:01:31,015 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PracticeApi/src/main/java
+2025-05-26 12:01:31,016 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/main/resources
+2025-05-26 12:01:31,016 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/main/resources
+2025-05-26 12:01:31,016 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PracticeApi/src/test/java
+2025-05-26 12:01:31,017 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PracticeApi/src/test/resources
+2025-05-26 12:01:31,372 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 12:01:31,392 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 12:01:31,394 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\PracticeApi\src\test\resources
+2025-05-26 12:03:10,613 [Worker-11: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.springBoot:PractiseProjectRestAPI:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PractiseProjectRestAPI\pom.xml.
+2025-05-26 12:03:11,065 [Worker-11: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PractiseProjectRestAPI/src/main/java
+2025-05-26 12:03:11,065 [Worker-11: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PractiseProjectRestAPI/src/main/resources
+2025-05-26 12:03:11,073 [Worker-11: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PractiseProjectRestAPI/src/main/resources
+2025-05-26 12:03:11,083 [Worker-11: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PractiseProjectRestAPI/src/test/java
+2025-05-26 12:03:11,084 [Worker-11: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PractiseProjectRestAPI/src/test/resources
+2025-05-26 12:03:11,647 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 12:03:11,663 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 12:03:11,666 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\PractiseProjectRestAPI\src\test\resources
+2025-05-26 12:03:54,454 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-05-26 12:04:56,496 [Worker-9: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.springBoot:PractiseProjectRestAPI:0.0.1-SNAPSHOT @ D:\My Personal Work\Spring Boot\PractiseProjectRestAPI\pom.xml.
+2025-05-26 12:04:57,574 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PractiseProjectRestAPI/src/main/java
+2025-05-26 12:04:57,575 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PractiseProjectRestAPI/src/main/resources
+2025-05-26 12:04:57,578 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PractiseProjectRestAPI/src/main/resources
+2025-05-26 12:04:57,587 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /PractiseProjectRestAPI/src/test/java
+2025-05-26 12:04:57,588 [Worker-9: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /PractiseProjectRestAPI/src/test/resources
+2025-05-26 12:04:59,176 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-05-26 12:04:59,191 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-05-26 12:04:59,195 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Personal Work\Spring Boot\PractiseProjectRestAPI\src\test\resources
+2025-05-26 12:17:49,382 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
