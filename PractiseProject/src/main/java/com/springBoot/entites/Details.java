@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name="Details1")
@@ -16,6 +17,7 @@ public class Details {
 	private int id;
 	@Column(name = "Name")
 	@NotBlank(message = "Name should not be Blank")
+	@Size(min=3,message="Name should be more than of 2 letters")
 	private String name;
 	@Column(name = "Address")
 	@NotBlank(message = "Address should not be Blank")
