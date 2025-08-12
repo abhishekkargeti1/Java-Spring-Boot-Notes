@@ -19,7 +19,13 @@ public class SecurityConfig {
                 .password(encoder.encode("mypassword"))
                 .roles("USER")
                 .build();
-        return new InMemoryUserDetailsManager(user);
+
+
+        UserDetails admin = User.withUsername("admin")
+                .password(encoder.encode("admin123"))
+                .roles("Admin")
+                .build();
+        return new InMemoryUserDetailsManager(user,admin);
     }
 
     @Bean
