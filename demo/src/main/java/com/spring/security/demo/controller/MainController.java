@@ -19,6 +19,7 @@ public class MainController {
     @GetMapping("/dataList")
     public Iterable<UserDetails> getData() {
         Iterable<UserDetails> details = service.getDetails();
+        System.out.println("Hello Abhishek");
         System.out.println("Details in Controller "+details);
         return details;
 
