@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\My Personal Work\Spring Boot\JWT"/>
 			<item value="D:\My Personal Work\Spring Boot\FirstProjectSI\FirstProjectSI"/>
 		</list>
 		<list key="projectNameTemplate">
