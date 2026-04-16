@@ -22,8 +22,6 @@ import com.auth.Application.repositories.UserDetailsRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jws;
-import io.jsonwebtoken.JwtException;
-import io.jsonwebtoken.MalformedJwtException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -46,7 +44,7 @@ public class JWTAuthFilter extends OncePerRequestFilter {
 		// TODO Auto-generated method stub
 
 		String header = request.getHeader("Authorization");
-		log.info("Header {} ", header);
+		log.info("Header Token {} ", header);
 		if (header != null && header.startsWith("Bearer ")) {
 			String token = header.substring(7);
 			try {
@@ -85,13 +83,9 @@ public class JWTAuthFilter extends OncePerRequestFilter {
 				}
 
 			} catch (ExpiredJwtException e) {
-				e.printStackTrace();
-			} catch (MalformedJwtException e) {
-				e.printStackTrace();
-			} catch (JwtException e) {
-				e.printStackTrace();
-			} catch (Exception e) {
-				e.printStackTrace();
+				request.setAttribute("error", "Token Expire");
+			}  catch (Exception e) {
+				request.setAttribute("error", "Invalid Token");
 			}
 		}
 		filterChain.doFilter(request, response);
@@ -103,5 +97,4 @@ public class JWTAuthFilter extends OncePerRequestFilter {
 		return request.getRequestURI().startsWith("/api/v1/auth");
 	}
 
-	
 }

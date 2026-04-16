@@ -73,7 +73,6 @@ public class JWTService {
                 		"roles",roles,
                 		"typ","access"
                 		))
-                
                 .signWith(key,SignatureAlgorithm.HS512)
                 .compact();
     }

@@ -20,7 +20,6 @@ public class UserDetailsDTO {
 	@NotBlank(message = "Please Enter First Name")
 	private String firstName;
 	private String middleName;
-	@NotBlank(message = "Please Enter Last Name")
 	private String lastName;
 	@NotBlank(message = "Please Enter Email Address")
 	@Email(message = "Please Enter Valid Email Address")
@@ -33,5 +32,6 @@ public class UserDetailsDTO {
 	private Set<RolesDTO> roles = new HashSet<>();
 	private Instant createdAt =  Instant.now();
 	private Instant updateAt =  Instant.now();
-	
+	private String picture;
+	private String providerId;
 }

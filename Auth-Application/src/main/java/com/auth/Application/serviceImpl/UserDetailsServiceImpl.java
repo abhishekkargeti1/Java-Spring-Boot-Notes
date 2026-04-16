@@ -25,28 +25,50 @@ public class UserDetailsServiceImpl implements UserDetails {
 	private UserDetailsRepository respository;
 	@Autowired
 	private ModelMapper mapper;
-	
+
 	@Autowired
 	private PasswordEncoder encoder;
 
 	@Override
 	@Transactional
 	public UserDetailsDTO getUserRegister(UserDetailsDTO dto) {
-		log.info("User Details in Service Layer {}", dto);
+		try {
+			log.info("User Details in Service Layer {}", dto);
 
-		if (respository.existsByEmail(dto.getEmail())) {
-			throw new IllegalArgumentException("Email already Exists");
+			if (respository.existsByEmail(dto.getEmail())) {
+				throw new IllegalArgumentException("Email already Exists");
+			}
 
+			dto.setPassword(encoder.encode(dto.getPassword()));
+			// UserDetailsEntity entity = UserDetailsMapper.toEntity(dto);
+			UserDetailsEntity entity = mapper.map(dto, UserDetailsEntity.class);
+			UserDetailsEntity savedDetails = respository.save(entity);
+
+			UserDetailsDTO savedDetailsDto = mapper.map(savedDetails, UserDetailsDTO.class);
+
+			return savedDetailsDto;
+		} catch (Exception e) {
+			throw new RuntimeException("Something Went Wrong in User Registration Please Try Something Later");
 		}
-		
-		dto.setPassword(encoder.encode(dto.getPassword()));
-		// UserDetailsEntity entity = UserDetailsMapper.toEntity(dto);
-		UserDetailsEntity entity = mapper.map(dto, UserDetailsEntity.class);
-		UserDetailsEntity savedDetails = respository.save(entity);
 
-		UserDetailsDTO savedDetailsDto = mapper.map(savedDetails, UserDetailsDTO.class);
+	}
 
-		return savedDetailsDto;
+	@Override
+	public UserDetailsDTO getUserRegister(UserDetailsEntity entity) {
+		try {
+			log.info("User Details in Service Layer {}", entity);
+
+			//dto.setPassword(encoder.encode(dto.getPassword()));
+			// UserDetailsEntity entity = UserDetailsMapper.toEntity(dto);
+			
+			UserDetailsEntity savedDetails = respository.save(entity);
+
+			UserDetailsDTO savedDetailsDto = mapper.map(savedDetails, UserDetailsDTO.class);
+
+			return savedDetailsDto;
+		} catch (Exception e) {
+			throw new RuntimeException("Something Went Wrong in User Registration Please Try Something Later");
+		}
 
 	}
 
@@ -80,4 +102,16 @@ public class UserDetailsServiceImpl implements UserDetails {
 		}
 	}
 
+	@Override
+	public boolean existByEmail(String email) {
+		// TODO Auto-generated method stub
+		return respository.existsByEmail(email);
+	}
+
+	@Override
+	public Optional<UserDetailsEntity> findByEmail(String email) {
+		return respository.findByEmail(email);
+	}
+
+	
 }

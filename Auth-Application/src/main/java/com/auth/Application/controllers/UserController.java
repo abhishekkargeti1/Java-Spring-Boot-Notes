@@ -30,6 +30,25 @@ public class UserController {
 	@Autowired
 	private UserDetails userService;
 
+	@PostMapping("/registerUser")
+	public ResponseEntity<?> registerUser(@Valid @RequestBody UserDetailsDTO detailsDto,BindingResult errorMessage){
+		
+		if (errorMessage.hasErrors()) {
+			for (FieldError error : errorMessage.getFieldErrors()) {
+				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error.getDefaultMessage());
+			}
+		}
+
+		UserDetailsDTO userRegisterDetails = userService.getUserRegister(detailsDto);
+		return ResponseEntity.status(HttpStatus.OK).body(userRegisterDetails);
+	}
+	
+	
+	
+	
+	
+	
+	
 	@GetMapping("/allUser")
 	public ResponseEntity<?> getAllUsers() {
 
