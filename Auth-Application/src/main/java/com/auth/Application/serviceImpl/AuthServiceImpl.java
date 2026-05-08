@@ -2,7 +2,7 @@ package com.auth.Application.serviceImpl;
 
 import java.util.Optional;
 import java.util.UUID;
-
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -31,6 +31,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class AuthServiceImpl implements AuthService {
 
+    private final ModelMapper modelMapper;
+
 	@Autowired
 	private UserDetails userService;
 
@@ -46,6 +48,17 @@ public class AuthServiceImpl implements AuthService {
 	@Autowired
 	private JWTService jwtService;
 
+
+    AuthServiceImpl(ModelMapper modelMapper) {
+        this.modelMapper = modelMapper;
+    }
+
+	
+
+	@Override
+	public UserDetailsDTO getUserRegister(UserDetailsDTO dto) {
+		return userService.getUserRegister(dto);
+	}
 
 	@Override
 	public UserDetailsDTO getUserRegister(UserDetailsEntity entity) {

@@ -41,6 +41,7 @@ public class Oauth2SuccessHandlerConfig implements AuthenticationSuccessHandler 
 		log.info("Authentication Info {}", authentication.toString());
 
 //		Taking Info From Authentication 
+
 		OAuth2User oath2User = (OAuth2User) authentication.getPrincipal();
 
 		log.info("User Info {}", oath2User.getAttributes().toString());
@@ -66,18 +67,17 @@ public class Oauth2SuccessHandlerConfig implements AuthenticationSuccessHandler 
 
 		case "github" -> {
 			String githubId = oath2User.getAttributes().getOrDefault("id", "").toString();
-			String email = (String)oath2User.getAttributes().get("email");
-			String name = (String)oath2User.getAttributes().get("name");
-			String userName =(String)oath2User.getAttributes().get("login");
-			String picture = (String)oath2User.getAttributes().get("avatar_url");
-			if(email==null) {
-				email = userName+"@github.com";
+			String email = (String) oath2User.getAttributes().get("email");
+			String name = (String) oath2User.getAttributes().get("name");
+			String userName = (String) oath2User.getAttributes().get("login");
+			String picture = (String) oath2User.getAttributes().get("avatar_url");
+			if (email == null) {
+				email = userName + "@github.com";
 			}
 			details = UserDetailsEntity.builder().providerId(githubId).email(email).firstName(name)
 					.provider(Provider.Github).accountStatus(true).picture(picture).build();
-			
-			
-			log.info("Email is {}",email);
+
+			// log.info("Email is {}",email);
 			optionalUser = authService.findByEmail(email);
 
 		}
@@ -95,19 +95,17 @@ public class Oauth2SuccessHandlerConfig implements AuthenticationSuccessHandler 
 			authService.getUserRegister(details);
 		}
 
-		
 //		Revoke Previous Token if Present
-		
+
 		Optional<RefreshToken> refreshTokenByUserID = authService.fingByUserId(details.getId());
-		if(refreshTokenByUserID.isPresent()) {
+		if (refreshTokenByUserID.isPresent()) {
 			RefreshToken tokenDetailsRefreshToken = refreshTokenByUserID.get();
 			tokenDetailsRefreshToken.setRevoked(true);
 			authService.saveRefreshTokenDetails(tokenDetailsRefreshToken);
 		}
-		
+
 //		Generate New Refresh Token And Access Token
-		
-		
+
 		String jti = UUID.randomUUID().toString();
 
 		RefreshToken refreshTokenDetails = RefreshToken.builder().jti(jti).details(details).revoked(false)

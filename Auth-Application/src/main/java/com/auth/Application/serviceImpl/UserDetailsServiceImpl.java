@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.auth.Application.dto.UserCredential;
 import com.auth.Application.dto.UserDetailsDTO;
 import com.auth.Application.entities.UserDetailsEntity;
+import com.auth.Application.exceptions.UserAlreadyExistsException;
 import com.auth.Application.repositories.UserDetailsRepository;
 import com.auth.Application.service.UserDetails;
 
@@ -32,11 +33,11 @@ public class UserDetailsServiceImpl implements UserDetails {
 	@Override
 	@Transactional
 	public UserDetailsDTO getUserRegister(UserDetailsDTO dto) {
-		try {
+		
 			log.info("User Details in Service Layer {}", dto);
 
 			if (respository.existsByEmail(dto.getEmail())) {
-				throw new IllegalArgumentException("Email already Exists");
+				throw new UserAlreadyExistsException("Email already Exists");
 			}
 
 			dto.setPassword(encoder.encode(dto.getPassword()));
@@ -47,9 +48,7 @@ public class UserDetailsServiceImpl implements UserDetails {
 			UserDetailsDTO savedDetailsDto = mapper.map(savedDetails, UserDetailsDTO.class);
 
 			return savedDetailsDto;
-		} catch (Exception e) {
-			throw new RuntimeException("Something Went Wrong in User Registration Please Try Something Later");
-		}
+		
 
 	}
 

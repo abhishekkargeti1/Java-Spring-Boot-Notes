@@ -51,6 +51,23 @@ public class AuthController {
 
 	@Autowired
 	private CookieService cookieService;
+	
+	
+	
+//	Register User
+
+	@PostMapping("/register")
+	public ResponseEntity<?> registerUser(@Valid @RequestBody UserDetailsDTO detailsDTO, BindingResult errorMessage) {
+		System.out.println("Details in Controller "+detailsDTO);
+		if (errorMessage.hasErrors()) {
+			for (FieldError error : errorMessage.getFieldErrors()) {
+				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error.getDefaultMessage());
+			}
+		}
+		UserDetailsDTO registeredUser = authService.getUserRegister(detailsDTO);
+
+		return ResponseEntity.status(HttpStatus.OK).body(registeredUser);
+	}
 
 	@PostMapping("/login")
 	public ResponseEntity<?> loginUser(@Valid @RequestBody UserCredential credentials, BindingResult errorMessage,
@@ -61,25 +78,21 @@ public class AuthController {
 				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error.getDefaultMessage());
 			}
 		}
-		
+
 		Optional<UserDetailsEntity> userDetails = authService.findByEmail(credentials.getEmail());
-		
-		if(userDetails.isPresent()) {
+
+		if (userDetails.isPresent()) {
 			UserDetailsEntity userDetailsEntity = userDetails.get();
-			//log.info("Email of User {}",userDetailsEntity.getEmail());
-			//log.info("Provider of User  {}",userDetailsEntity.getProvider());
-			
-			if(userDetailsEntity.getProvider() == Provider.Google) {
-				throw new RuntimeException("Please Login With Google");
-			}else if(userDetailsEntity.getProvider() == Provider.Github) {
-				throw new RuntimeException("Please Login With Github");				
+			// log.info("Email of User {}",userDetailsEntity.getEmail());
+			// log.info("Provider of User {}",userDetailsEntity.getProvider());
+
+			if (userDetailsEntity.getProvider() == Provider.Google) {
+				throw new BadCredentialsException("Please Login With Google");
+			} else if (userDetailsEntity.getProvider() == Provider.Github) {
+				throw new BadCredentialsException("Please Login With Github");
 			}
 		}
-		
-		
-		
-		
-		
+
 		Authentication authenticateUser = authService.authenticateUser(credentials);
 		log.info("AuthenticateUser {}", authenticateUser);
 
@@ -90,8 +103,14 @@ public class AuthController {
 
 		String jti = UUID.randomUUID().toString();
 
-		var refreshTokenDetails = RefreshToken.builder().jti(jti).details(loginUserDetails).createdAt(Instant.now())
-				.expireAt(Instant.now().plusSeconds(jwtService.getRefreshTtlSeconds())).revoked(false).build();
+		var refreshTokenDetails = RefreshToken.builder()
+				.jti(jti)
+				.details(loginUserDetails)
+				.createdAt(Instant.now())
+				.expireAt(Instant.now()
+			    .plusSeconds(jwtService.getRefreshTtlSeconds()))
+				.revoked(false)
+				.build();
 
 		// var refreshToken = jwtService.generateRefreshToken(loginUserDetails, jti);
 
@@ -212,8 +231,7 @@ public class AuthController {
 		cookieService.addNoStoreHeaders(response);
 		SecurityContextHolder.clearContext();
 		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
-		
-		
+
 	}
 
 }

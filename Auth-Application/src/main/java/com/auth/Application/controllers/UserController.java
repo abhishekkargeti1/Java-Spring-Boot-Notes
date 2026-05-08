@@ -32,7 +32,7 @@ public class UserController {
 
 	@PostMapping("/registerUser")
 	public ResponseEntity<?> registerUser(@Valid @RequestBody UserDetailsDTO detailsDto,BindingResult errorMessage){
-		
+		System.out.println("Details in Controller "+detailsDto);
 		if (errorMessage.hasErrors()) {
 			for (FieldError error : errorMessage.getFieldErrors()) {
 				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error.getDefaultMessage());
